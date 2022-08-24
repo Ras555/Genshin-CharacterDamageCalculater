@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Character Damage Calculation</title>
+        <link rel="stylesheet" href="mainStyle.css">
+        <link rel="stylesheet" href="damageCalculation.css">
+        <script src="damageCalculation.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="header"> <!------------Webpage Header-->
+            <div id = "websiteTitle" >
+                <h1>Genshin Character Optimizer</h1>
+            </div>
+            <div id="mainMenu">
+                <nav>
+                    <div class ="mainMenu" style="right: 20%;">
+                        Characters
+                    </div>
+                    <div class="mainMenu" style="right: 10%;">
+                        Friends
+                    </div>
+                    <div class = "mainMenu" style="right: 0%;">
+                        Account
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div id = "mainBody">
+            <div id = "mainBackdrop">
+                <div id="CharacterInfo">
+                    <div id="CharacterStats">
+                        <br>
+                        <h2>Character Stats:</h2>
+                        <br>
+                        <form autocomplete="on">
+                            <div>
+                                <div class="statInput">
+                                    <label for="name">Character Name:</label>
+                                    <input type="text" id="name" name="name" style="width: 140px;">
+                                </div>
+                                <div class="statInput">
+                                    <label for="element">Element:</label>
+                                    <select onchange="changeElemDmg()" id="element" name="element">
+                                        <option value="Anemo">Anemo</option>
+                                        <option value="Cryo">Cryo</option>
+                                        <option value="Electro">Electro</option>
+                                        <option value="Geo">Geo</option>
+                                        <option value="Hydro">Hydro</option>
+                                        <option value="Pyro">Pyro</option>
+                                    </select>
+                                </div>
+                                <div class="statInput">
+                                    <label for="level">Character Level:</label>
+                                    <input type="text" id="level" name="level">
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <div class="statInput">
+                                    <label for="attack">Attack:</label>
+                                    <input type="text" id="attack" name="attack">
+                                </div>
+                                <div class="statInput">
+                                    <label for="critRate">Crit Rate:</label>
+                                    <input type="text" id="critRate" name="critRate">
+                                </div>
+                                <div class="statInput">
+                                    <label for="critDmg">Crit Damage:</label>
+                                    <input type="text" id="critDmg" name="critDmg">
+                                </div>
+                                <div class="statInput">
+                                    <label id = "eleLabel" for="eleBonus">Elemental Damage Bonus:</label>
+                                    <input type="text" id="eleBonus" name="eleBonus">
+                                </div>
+                                <div class="statInput">
+                                    <label for="physBonus">Physical Damage Bonus:</label>
+                                    <input type="text" id="physBonus" name="physBonus">
+                                </div>
+                                <div class="statInput">
+                                    <label for="mastery">Elemental Mastery:</label>
+                                    <input type="text" id="mastery" name="mastery">
+                                </div>
+                                <br><br>
+                                <button type="button" id="calculate" onclick="calculateDamage()" class="button">Calculate</button>
+                            </div>
+                        </form>
+                        <br>
+                    </div>
+
+                    <div id="CharacterDamage">
+                        <br>
+                        <h2>Character Damage:</h2>
+                        <br>
+                        <div class="damageStat">
+                            Normal (Physical) Damage: <p id="normDmg"></p>
+                        </div>
+                        <div class="damageStat">
+                            Normal Crit Damage: <p id="critDmgValue"></p>
+                        </div>
+                        <div class="damageStat">
+                            Average Normal Damage: <p id="avgDmgValue"></p>
+                        </div>
+                        <div class="damageStat">
+                            Average Elemental Damage: <p id="elemDmgValue"></p>
+                        </div>
+                        <br>
+                        <h2>Elemental Reaction Damage:</h2>
+                        <br>
+                        <div class="damageStat reaction" id = "elecCharged">
+                            Electro-Charged Damage: <p id="elecChargedDmg"></p>
+                        </div>
+                        <div class="damageStat reaction" id = "melt">
+                            Melt (Total) Damage: <p id="meltDmg"></p>
+                        </div>
+                        <div class="damageStat reaction" id = "over">
+                            Overloaded Damage: <p id="overDmg"></p>
+                        </div>
+                        <div class="damageStat reaction" id = "shatter">
+                            Shattered Damage: <p id="shatterDmg"></p>
+                        </div>
+                        <div class="damageStat reaction" id = "superCon">
+                            Superconduct Damage: <p id="supConDmg"></p>
+                        </div>
+                        <div class="damageStat reaction" id = "swirl">
+                            Swirl Damage: <p id="swirlDmg"></p>
+                        </div>
+                        <div class="damageStat reaction" id = "vap">
+                            Vaporize (Additional) Damage: <p id="vapDmg"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

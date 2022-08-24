@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin: 0px;   
+    box-sizing: border-box;
+    font: open-sans;
+    color:rgb(215, 235, 245);
+}
+
+#mainBody{
+    position: relative;
+    top: 150px;
+    background-image: linear-gradient(black, rgb(4, 133, 133));
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(4, 133, 133);
+    position: fixed;
+    top: 0px;
+    padding: 0;
+    border-width: 0px 0px 0px 0px;  
+    border-style: solid;
+    border-color: rgb(1, 12, 10);
+}
+
+#websiteTitle{
+    position: relative;
+    width: 100%;
+    height: 66.66%;
+    /*border: 2px solid rgb(215, 235, 245);*/
+    background-color: rgb(3, 92, 92);
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    vertical-align: center;
+    font-size: 30px;
+    font: gautami;
+    color:rgb(215, 235, 245);
+}
+
+#websiteTitle h1{
+    font-size: 65px;
+    font: gautami;
+    background: -webkit-linear-gradient(black, rgb(4, 133, 133));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*-webkit-text-stroke-color:white;
+    -webkit-text-stroke-width: 0.3px;*/
+}
+
+#mainMenu{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 100%;
+    height: 33.33%;
+    padding: 0;
+    margin: 0;
+    /*border: 3px solid black;*/
+    font-size: 20px;
+    vertical-align: center;
+}
+
+.mainMenu{
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    border-width: 0 0px 0 0px;
+    border-style: solid;
+    border-color: rgb(215, 235, 245);
+    vertical-align: center;
+    text-align: center;
+    padding: 15px;
+}
+
+#mainBackdrop{
+    position: relative;
+    top: 0px;
+    width: 75%;
+    height: 90%;
+    margin: auto;
+    background-color: rgb(2, 27, 27);
+}

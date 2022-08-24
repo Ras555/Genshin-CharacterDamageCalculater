@@ -1,0 +1,81 @@
+#CharacterInfo{
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    /*border: 3px solid black;*/
+
+}
+
+#CharacterStats{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    /*border: 3px solid black;*/
+    padding: 20px 60px;
+}
+
+input{
+    width: 50px;
+    position: absolute;
+    right: 30px;
+    padding: 2px;
+    text-align: center;
+    background-color: rgb(215, 235, 245);
+}
+
+select{
+    position: absolute;
+    right: 30px;
+    padding: 2px;
+    text-align: left;
+    background-color: rgb(215, 235, 245);
+    color: black;
+}
+
+.statInput{
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 4px;
+    /*border: 3px solid black;*/
+}
+
+button{
+    position: relative;
+    width: 150px; 
+    height: 40px; 
+    left: 30%;
+    padding: 0;
+    font-size: 20px;
+    background-color: rgb(215, 235, 245);
+    color: black;
+}
+
+#CharacterDamage{
+    position: absolute;
+    width: 50%;
+    display: inline-block;
+    /*border: 3px solid black;*/
+    padding: 20px 60px;
+    margin: 0px;
+}
+
+.damageStat{
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 4px;
+    padding: 2px;
+    /*border: 3px solid black;*/
+}
+
+#CharacterDamage p{
+    display: inline;
+    position: absolute;
+    right: 30px;
+    padding: 2px;
+}
+
+.reaction {
+    display: none;
+}
