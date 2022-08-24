@@ -20,6 +20,7 @@ input{
     right: 30px;
     padding: 2px;
     text-align: center;
+    color: black;
     background-color: rgb(215, 235, 245);
 }
 
@@ -29,6 +30,10 @@ select{
     padding: 2px;
     text-align: left;
     background-color: rgb(215, 235, 245);
+    color: black;
+}
+
+option{
     color: black;
 }
 
